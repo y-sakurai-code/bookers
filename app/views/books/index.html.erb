@@ -9,14 +9,22 @@
   <body>
     <h1>Books</h1>
       <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Body</th>
-            <th></th> 
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Body</th>
           </tr>
-        </thead>
-      </table>
+          <% @books.each do |book| %>
+          <tr>
+            <th><%= book.title %></th>
+            <th><%= book.body %></th>
+            <th><%= link_to "Show", book_path(book.id) %></th>
+            <th><%= link_to "Edit", edit_book_path(book.id) %></th>
+            <th><a half="">Destroy</a></th>
+          </tr>
+          <% end %>
+        </thead>
+      </table>
 
       <br>
 
@@ -31,7 +39,7 @@
 
           <%= f.submit 'Create Book' %>
 
-    <% end %>
+      <% end %>
 
   </body>
 </html>
