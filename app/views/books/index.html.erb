@@ -22,10 +22,6 @@
             <th><%= link_to "Show", book_path(book.id) %></th>
             <th><%= link_to "Edit", edit_book_path(book.id) %></th>
             <th><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure ?" %></th>
-            <!-- <th><%= link_to "Destroy", book_path(book.id), data: { turbo_method: :delete, turbo_confirm: "Are you sure ?" } %></th> -->
-            <!--<%= form_with(url: book_path(book.id), method: :delete, data: { turbo_confirm: "Are you sure ?" }) do |form| %>-->
-              <!--<%= form.submit "Destroy", class: "btn btn-danger" %>-->
-            <!--<% end %>-->
           </tr>
           <% end %>
         </thead>
