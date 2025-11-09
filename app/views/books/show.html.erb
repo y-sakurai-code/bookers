@@ -7,3 +7,9 @@
   <h2>本文Body:</h2>
   <%= @book.body %>
 </p>
+
+<p>
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+  |
+  <a half="/books">Back</a>
+</p>
