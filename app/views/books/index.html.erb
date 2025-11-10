@@ -7,21 +7,22 @@
   </head>
 
   <body>
-    <h1>Books</h1>
-      <table>
+    <div class="box">
+    <h1 class="title">Books</h1>
+      <table class="table">
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Body</th>
+            <th class="title_tag">Title</th>
+            <th class="title_tag">Body</th>
           </tr>
 
           <% @books.each do |book| %>
           <tr>
-            <th><%= book.title %></th>
-            <th><%= book.body %></th>
-            <th><%= link_to "Show", book_path(book.id) %></th>
-            <th><%= link_to "Edit", edit_book_path(book.id) %></th>
-            <th><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure ?" %></th>
+            <th class="book_title"><%= book.title %></th>
+            <th class="book_body"><%= book.body %></th>
+            <th class="book_menu"><%= link_to "Show", book_path(book.id) %></th>
+            <th class="book_menu"><%= link_to "Edit", edit_book_path(book.id) %></th>
+            <th class="book_menu"><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure ?" %></th>
           </tr>
           <% end %>
         </thead>
@@ -50,6 +51,6 @@
           <%= f.submit 'Create Book' %>
 
       <% end %>
-
+   </div>
   </body>
 </html>

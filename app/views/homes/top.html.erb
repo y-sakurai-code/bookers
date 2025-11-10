@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>Bookers</title>
-    <link rel="stylesheet" href="/app/assets/styleshhets/homes.scss" />
+    <link rel="stylesheet" href="/assets/styleshhets/homes.scss" />
   </head>
 
   <body>
-    <h1>ようこそ Bookers へ！</h1>
-    <p>Bookers では、さまざまな書籍に関するあなたの意見や</p>
-    <p>印象を共有し交換することができます</p>
-    <%= link_to "start", books_path %>
+    <div class="box1">
+    <h1 class="title">ようこそ Bookers へ！</h1>
+    <p class="story">Bookers では、さまざまな書籍に関するあなたの意見や</p>
+    <p class="story">印象を共有し交換することができます</p>
+    <p class="story"><%= link_to "start", books_path %></p>
+    </div>
 
   </body>
 </html>

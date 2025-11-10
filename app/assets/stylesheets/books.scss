@@ -1,3 +1,42 @@
-// Place all the styles related to the lists controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  height: 700px;
+  width: 1000px;
+}
+
+.table{
+  margin: 40px;
+  book_title: left;
+  book_body: left;
+}
+
+.title{
+  height: 10px;
+  margin: 30px;
+}
+
+.title_tag{
+  height: 20px;
+  margin: 30px;
+  padding: 10px 75px;
+}
+
+.book_title{
+  margin: 30px;
+  padding: 2.5px 75px;
+}
+
+.book_body{
+  margin: 30px;
+  padding: 2.5px 150px;
+}
+
+.book_menu{
+  margin: 5px;
+  padding: 2.5px 5px;
+}
