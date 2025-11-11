@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# DMM WEBCAMPコンテンツ【課題：Bookersを作成しよう】
 
-Things you may want to cover:
+DMM WEBCAMPの学習コンテンツ課題：Bookersを作成しようです。
 
-* Ruby version
+## 使い方
 
-* System dependencies
+必須要件
+ruby 3.1.2p20
+Rails 6.1.7.10
+データベース: SQLite3
 
-* Configuration
+1.リポジトリのクローン
+git clone https://github.com/y-sakurai-code/bookers.git
+cd bookers
 
-* Database creation
+2.Gemパッケージのインストール
+bundle install
 
-* Database initialization
+3.データベースのセットアップ
+rails db:create
+rails db:migrate
 
-* How to run the test suite
+4.webサーバーの起動
+rails s
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+※ブラウザで http://localhost:3000 にアクセスしてください。
