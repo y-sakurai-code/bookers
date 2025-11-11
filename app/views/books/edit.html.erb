@@ -1,19 +1,32 @@
-<h1>Editing Book</h1>
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bookers</title>
+    <link rel="stylesheet" href="/app/assets/stylesheets/books.scss" />
+  </head>
 
-<%= form_with model: @book do |f| %>
+  <body>
+    <div class="edit_box">
+      <h1>Editing Book</h1>
 
-  <h4>Title</h4>
-  <%= f.text_field :title %>
-  
-  <h4>Body</h4>
-  <%= f.text_area :body %>
-  
-  <%= f.submit 'Update Book' %>
-  
-<% end %>
+      <%= form_with model: @book do |f| %>
 
-<p>
-  <%= link_to "Show", book_path(@book.id) %>
-  |
-  <%= link_to "Back", "/books" %>
-</p>
+        <h4>Title</h4>
+        <%= f.text_field :title %>
+  
+        <h4>Body</h4>
+        <%= f.text_area :body %>
+  
+        <%= f.submit 'Update Book' %>
+  
+      <% end %>
+
+      <div class="edit_manu">
+        <%= link_to "Show", book_path(@book.id) %>
+        |
+        <%= link_to "Back", "/books" %>
+      </div>
+    </div>
+  </body>
+</html>

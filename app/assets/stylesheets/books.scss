@@ -5,8 +5,7 @@
 }
 
 .box{
-  height: 700px;
-  width: 1000px;
+  flex-direction: column;
 }
 
 .table{
@@ -39,4 +38,48 @@
 .book_menu{
   margin: 5px;
   padding: 2.5px 5px;
+}
+
+.errors{
+  margin: 5px;
+  padding: 0% 30px;
+}
+
+.create_manu{
+  margin: 5px;
+  padding: 0% 30px;
+}
+
+.new_book{
+  margin: 0px;
+}
+
+.new_title{
+  margin: 5px 0px;
+}
+
+.new_body{
+  margin: 5px 0px;
+}
+
+.show_box{
+  font-size: 10pt;
+  margin: 40px;
+}
+
+.show_book{
+  font-size: 10pt;
+  display: flex;
+  margin: 10px 10px;
+}
+
+.show_body{
+  font-size: 10pt;
+  display: flex;
+  margin: 10px 10px;
+}
+
+.edit_box{
+  font-size: 10pt;
+  margin: 40px;
 }
